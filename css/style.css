@@ -146,10 +146,10 @@ input.btn{
 }
 /*TITLE STYLE*/
 h6{
-color: #000;
-font-size: 36px;
-font-family: 'robotolight';
-text-transform: uppercase;
+	color: #000;
+	font-size: 36px;
+	font-family: 'robotolight';
+	text-transform: uppercase;
 }
 h6 span{
 	font-family: 'roboto_condensedbold';
@@ -770,6 +770,74 @@ footer .container{
 		float: right;
 		font-size: 27px;
 		margin:0 82px 15px 0;
-
 	}
+	.direction{
+		width: 250px;
+		height: 40px;
+		padding: 14px 15px 12px 22px;
+	}
+	.direction span{
+		font-size: 15px;
+	}
+	.total-price {
+		width: 100px;
+		height: 40px;
+		padding-top: 5px;
+	}
+	.price-desq{
+		padding-left: 15px;
+	}
+	.total-price span.old-price{
+		font-size: 14px;
+		margin-left: 12px;
+	}
+	.total-price span.new-price{
+		font-size: 20px;
+		margin-left: 32px;
+	}
+	.total-price span.new-price span{
+		font-size: 15px;
+		padding-left: 0;
+	}
+	.start-time, .end-time {
+		top: 15px;
+		font-size: 18px;
+	}
+	.information{
+		font-size: 12px;
+	}
+	.information .btn{
+		font-size: 16px;
+	}
+	.reviews .title{
+		padding-top: 30px;
+	}
+	.reviews-totle span{
+		font-size: 15px;
+	}
+	.reviews-text {
+		font: 14px/22px 'robotoregular';
+	}
+	footer {
+		padding-top: 20px;
+	}
+	.developer {
+		font: 10px/15px 'robotoregular';
+	}
+	.footer-contact .contact-list{
+	padding-right: 155px;
+	}
+	.footer-contact .address span{
+	font: 11px/16px 'robotomedium';
+	}
+	.social{
+		top: -2px;
+		right: 13px;
+	}
+	.social li{
+		margin: 0 6px;
+	}
+
 }
+
+
