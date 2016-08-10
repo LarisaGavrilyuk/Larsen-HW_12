@@ -709,3 +709,67 @@ footer .container{
 	font-family: 'robotomedium';
 	color: #db3a34;
 }
+
+/*Adaptive start*/
+@media (max-width: 959px){
+	.container{
+		width: 750px;
+		padding: 0 20px 0 10px;
+	}
+	.logo{
+		width: 260px;
+	}
+	.logo img{
+		width: 80%;
+	}
+	.contact-list li{
+		font-size: 13px;
+	}
+	.contact-list li:not(:last-child){
+		margin-right: 30px;
+	}
+	.contact-list li:before{
+		margin-right: 8px;
+	}
+	.header-nav li:not(:last-child){
+		margin-right: 30px;
+	}
+	.header-nav li a{
+	font-size: 12px;
+	}
+
+	.slide{
+		top: 90px;
+	}
+	.slide p,.slide.three p{
+	font: 30px/23px 'robotolight';
+	}
+	.slick-dots li button{
+		width: 18px;
+		height: 18px;
+	}
+	h6{
+		font-size: 30px;
+	}
+	.timer-wrap {
+		padding:20px 0;
+	}
+	.timer-block{
+	width: 400px;
+    height: 150px;
+    margin-top: 12px;
+    padding: 9px 10px 11px 14px;
+	}
+	.tab-val{
+	font-size: 64px;
+	}
+	.tab-unit{
+	font-size: 14px;
+	}
+	.discount-form .title{
+		float: right;
+		font-size: 27px;
+		margin:0 82px 15px 0;
+
+	}
+}
