@@ -181,7 +181,7 @@ header{
 	padding-top: 20px;
 	width: 100%;
 	position: fixed;
-  	z-index: 100;
+  	z-index: 101;
 }
 .logo{
 	float: left;
@@ -709,12 +709,13 @@ footer .container{
 	font-family: 'robotomedium';
 	color: #db3a34;
 }
-
+.slicknav_menu{
+	display: none;
+}
 /*Adaptive start*/
 @media (max-width: 959px){
 	.container{
-		width: 750px;
-		padding: 0 20px 0 10px;
+		width: 768px;
 	}
 	.logo{
 		width: 260px;
@@ -840,4 +841,128 @@ footer .container{
 
 }
 
+@media (max-width: 767px){
+	.container{
+		width: 100%;
+	}
+	main{
+		width: 100%;
+	}
+	header{
+		height: 70px;
+	}
+	.slicknav_menu {
+		display:block;
+		background: transparent;
+		float: right;
+		padding-bottom: 0;
+	}
+	.slicknav_btn.slicknav_collapsed{
+		background-color: #a0b137;
+	}
+	.slicknav_nav a{
+		color: #000000;
+	}
+	.logo{
+		width: 260px;
+	}
+	.logo img{
+		width: 65%;
+	}
+	.contact-list{
+		position: absolute;
+		bottom: 0px;
+		left: 10px;
+	}
+	.contact-list li{
+		font-size: 12px;
+	}
+	.contact-list li:not(:last-child){
+		margin-right: 25px;
+	}
+	.header-nav {
+		display: none;
+	}
+	.slide{
+		top: 20px;
+	}
+	.slide p,.slide.three p{
+		font: 23px/23px 'robotolight';
+	}
+	.slick-dots li button{
+		width: 16px;
+		height: 16px;
+	}
+	h6{
+		font-size: 23px;
+	}
+	span.red-star{
+		font-size: 14px;
+	}
+	.timer-wrap {
+		padding:20px 0;
+	}
+	.timer-block{
+	    margin: 12px 0 0 90px;
+   	}
+	.discount-form {
+		float: left;
+		font-size: 27px;
+		margin:20px 0 0 150px;
+	}
+	.discount-form .title{
+		margin-right: 95px;
+	}
+	.price,.price .title {
+		margin-left: 90px;
+	}
+	.price-block{
+		width: 80%;
+	}
+	.advantage .col span{
+		font-size: 12px;
+	}
+	.reviews .col{
+		width: 50%;
+	}
+	.contact-form form{
+		width: 100%;
+		margin: 25px auto;
+	}
+	.contact-form form .input-sm{
+		width: 180px;
+	}
+	.contact-form form .input-lg{
+		width: 279px;
+	}
+	footer {
+		padding-top: 20px;
+	}
+	.developer {
+		font: 9px/13px 'robotoregular';
+	}
+	.contact-list li{
+		font-size: 10px;
+	}
+	.contact-list li:not(:last-child){
+		margin-right: 10px;
+	}
+	.footer-contact{
+		margin: 25px 200px 0 0;
+	}
+	.footer-contact .contact-list{
+		bottom: -23px;
+		left: 130px;
+	}
+	.footer-contact .address span{
+	font-size: 9px;
+	}
+	.social{
+		top: -2px;
+		right: 13px;
+	}
+	.social li{
+		margin: 0 6px;
+	}
 
+}

@@ -4,8 +4,9 @@
  		<meta charset="UTF-8">
  		<title>Грандвояж</title>
  		<meta name="viewport" content="width=device-width, initial-scale=1">
+ 		<link rel="stylesheet" href="css/slicknav.min.css">
 		<link rel="stylesheet" href="css/font-awesome.min.css">
- 		<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+ 		<link rel="stylesheet" type="text/css" href="css/slick.css">
  		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
@@ -18,13 +19,13 @@
 						<img src="img/Logo.png" alt="">
 					</a>
 				</div>
-				<div class="header-contact">
+				<div  class="header-contact">
 					<ul class="contact-list">
 						<li class="life"><span>063 54 965 84</span></li>
 						<li class="star"><span>063 54 965 84</span></li>
 						<li class="mts"><span>063 54 965 84</span></li>
 					</ul>
-					<ul class="header-nav">
+					<ul id="menu" class="header-nav ">
 						<li><a href="#">Направления и Цены</a></li>
 						<li><a href="#">Преимущества</a></li>
 						<li><a href="#">Отзывы</a></li>
@@ -407,6 +408,7 @@
 		 <script type="text/javascript" src="js/validate.js"></script>
 		 <script type="text/javascript" src="js/jquery.syotimer.min.js"></script>
 		 <script src="js/placeholders.min.js"></script>
+		  <script src="js/jquery.slicknav.js"></script>
 		 <script>
 		 	$('.fade-js').slick({
 			  dots: true,
@@ -441,6 +443,11 @@
                 	periodInterval: 10
         		});
     		});
+		</script>
+		<script>
+			$(function(){
+			$('#menu').slicknav();
+			});
 		</script>
 	</body>
 </html>
