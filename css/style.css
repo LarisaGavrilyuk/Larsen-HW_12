@@ -888,7 +888,7 @@ footer .container{
 		display: none;
 	}
 	.slide{
-		top: 20px;
+		top: 80px;
 	}
 	.slide p,.slide.three p{
 		font: 23px/23px 'robotolight';
@@ -940,13 +940,14 @@ footer .container{
 	.contact-form form ,.contact-form form .input-sm , .contact-form form .input-lg {
     	width: 100%;
 	}
-	.contact-form form input[type="text"] + input[type="text"] {
+	.contact-form form input[type="text"] + input[type="text"],.contact-form form input[type="text"]:first-child {
 		margin: 0 0 15px 0;
 	}
 	.contact-form form input[name="name"], .contact-form form .input-lg,.contact-form form .input-sm {
 		margin-bottom: 15px !important;
 	}
 	footer {
+		height: auto;
 		padding-top: 20px;
 	}
 	.developer {
@@ -956,7 +957,7 @@ footer .container{
 		font-size: 10px;
 	}
 	.contact-list li:not(:last-child){
-		margin-right: 10px;
+		margin-right: 8px;
 	}
 	.footer-contact{
 		margin: 25px 200px 0 0;
@@ -975,5 +976,189 @@ footer .container{
 	.social li{
 		margin: 0 6px;
 	}
-
 }
+@media (max-width: 599px){
+	.contact-list li{
+		display: block;
+		font-size: 11px;
+	}
+	.contact-list{
+		top: 10px;
+		right: 50px;
+		text-align: right;
+	}
+	.contact-list li:not(:last-child) {
+    	margin-right: 0;
+    }
+	.slide p,.slide.three p{
+		font: 20px/16px 'robotolight';
+	}
+	.slide.three p{
+		color: #c5bbbb;
+	}
+	h6 {
+    	font-size: 20px;
+	}
+	.slick-dots li button {
+    	width: 14px;
+    	height: 14px;
+	}
+	.timer-wrap {
+    	padding: 10px 0;
+	}
+	span.red-star {
+    	font-size: 12px;
+	}
+	span.red-star > span {
+        font-size: 25px;
+    	margin-right: 12px;
+    }
+    .price .title, .advantage .title, .reviews .title {
+    	text-align: center;
+    }
+	.price, .price .title {
+   		margin-left: 0;
+	}
+	.price {
+    	padding: 15px 0 0px 0;
+	}
+	.row{
+		margin-right: -130px;
+	}
+	.advantage {
+   		padding: 20px 0 20px 0;
+	}
+	.advantage .title {
+   		margin-bottom: 30px;
+	}
+	.advantage .col {
+   		width: 27%;
+    	padding: 100px 10px 15px;
+    }
+	.advantage .col span {
+    	font-size: 10px;
+    }
+    .reviews .title {
+    	padding: 15px 0 25px 0;
+   	}
+   	.reviews .col {
+    	width: 40%;
+    	padding: 0 6px;
+    }
+	footer{
+		padding-top: 15px;
+	}
+	.footer-contact .contact-list li{
+		display: inline;
+	}
+	.footer-contact .contact-list{
+		padding-right: 0;
+		left: 50px;
+	}
+	.developer{
+		float: none;
+		position: absolute;
+		top: 60px;
+		left: 200px;
+		text-align: center;
+	}
+	.footer-contact {
+    	margin: 38px 114px 0 0;
+	}
+	.social {
+    	top: 100px;
+    	right: 150px;
+	}
+}
+@media (max-width: 479px){
+	header{
+    position: static;
+    height: auto;
+    overflow: hidden;
+  	}
+  	main{
+    padding: 0;
+  	}
+  	.contact-list{
+  		height: 60px;
+  	}
+	.logo img {
+    	width: 55%;
+    }
+    .logo {
+   		width: 200px;
+   	}
+   	.slicknav_nav a{
+   		font-size: 10px;
+   	}
+   	.slide{
+   		top: 15px;
+   	}
+   	.slide p, .slide.three p {
+    	font: 14px/10px 'robotolight';
+    }
+    h6 {
+    	font-size: 16px;
+	}
+	.timer-wrap .title{
+		text-align: center;
+	}
+	.tab-val{
+		font-size: 45px;
+		padding: 0 19px;
+		margin-bottom: 10px;
+	}
+	.tab-unit{
+		font-size: 12px;
+	}
+	.direction {
+    	width: 240px;
+    	height: 35px;
+    	padding: 10px;
+	}
+	.total-price {
+    	width: 90px;
+    }
+    .total-price span.old-price {
+    	font-size: 12px;
+    	margin-left: 7px;
+	}
+    .total-price span.new-price {
+   		font-size: 17px;
+    	margin-left: 12px;
+	}
+	.total-price span.new-price span {
+    	font-size: 12px;
+    }
+    .information .btn {
+    	font-size: 14px;
+    	padding: 10px;
+	}
+	.start-time, .end-time {
+        font-size: 14px;
+	}
+	.advantage .col {
+    	width: 35%;
+	}
+	.reviews .col {
+    	width: 76%;
+    }
+    .footer-contact .contact-list{
+		left: 0;
+		right: 0;
+		text-align: center;
+	}
+	.footer-contact{
+		margin-right: 35px;
+	}
+	.developer{
+		left: 108px;
+	}
+	.social{
+		right: 90px;
+	}
+}
+
+
+
+
