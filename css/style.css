@@ -857,11 +857,15 @@ footer .container{
 		float: right;
 		padding-bottom: 0;
 	}
+	.slicknav_btn {
+		background-color: #a0b137;
+	}
 	.slicknav_btn.slicknav_collapsed{
 		background-color: #a0b137;
 	}
 	.slicknav_nav a{
-		color: #000000;
+		color: #756614;
+		font: bold 16px 'robotolight';
 	}
 	.logo{
 		width: 260px;
@@ -903,16 +907,21 @@ footer .container{
 		padding:20px 0;
 	}
 	.timer-block{
-	    margin: 12px 0 0 90px;
+		width: 100%;
+    	margin: 12px 0 ;
    	}
+   	.discount-timer, .discount-form,.discount-form .title {
+   		float: none;
+	}
 	.discount-form {
-		float: left;
+		width: 100%;
 		font-size: 27px;
-		margin:20px 0 0 150px;
+		margin:20px 0 ;
 	}
 	.discount-form .title{
-		margin-right: 95px;
-	}
+		text-align: center;
+		margin-right: 0;
+		}
 	.price,.price .title {
 		margin-left: 90px;
 	}
@@ -920,20 +929,22 @@ footer .container{
 		width: 80%;
 	}
 	.advantage .col span{
-		font-size: 12px;
+		font-size: 11px;
 	}
 	.reviews .col{
 		width: 50%;
 	}
 	.contact-form form{
-		width: 100%;
-		margin: 25px auto;
+		margin-top: 20px;
 	}
-	.contact-form form .input-sm{
-		width: 180px;
+	.contact-form form ,.contact-form form .input-sm , .contact-form form .input-lg {
+    	width: 100%;
 	}
-	.contact-form form .input-lg{
-		width: 279px;
+	.contact-form form input[type="text"] + input[type="text"] {
+		margin: 0 0 15px 0;
+	}
+	.contact-form form input[name="name"], .contact-form form .input-lg,.contact-form form .input-sm {
+		margin-bottom: 15px !important;
 	}
 	footer {
 		padding-top: 20px;
@@ -955,7 +966,7 @@ footer .container{
 		left: 130px;
 	}
 	.footer-contact .address span{
-	font-size: 9px;
+		font-size: 9px;
 	}
 	.social{
 		top: -2px;
