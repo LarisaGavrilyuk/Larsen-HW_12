@@ -844,45 +844,60 @@ footer .container{
 @media (max-width: 767px){
 	.container{
 		width: 100%;
+		padding: 0 10px;
 	}
 	main{
 		width: 100%;
 	}
 	header{
 		height: 70px;
+		padding-top: 10px;
 	}
 	.slicknav_menu {
+		height: 0;
 		display:block;
-		background: transparent;
-		float: right;
-		padding-bottom: 0;
+		padding: 0;
+		background-color: #a0b137;
 	}
+	#menu{
+    display: none;
+  	}
 	.slicknav_btn {
 		background-color: #a0b137;
 	}
 	.slicknav_btn.slicknav_collapsed{
 		background-color: #a0b137;
 	}
+	.slicknav_nav{
+		background-color: #a0b137;
+		padding: 5px;
+	}
 	.slicknav_nav a{
-		color: #756614;
+		text-align: center;
+		color: #fff;
 		font: bold 16px 'robotolight';
 	}
+	.slicknav_menu:after {
+    	content: " ";
+    	display: none;
+    }
 	.logo{
 		width: 260px;
 	}
 	.logo img{
-		width: 65%;
+		width: 80%;
 	}
 	.contact-list{
-		position: absolute;
-		bottom: 0px;
-		left: 10px;
-	}
+		text-align: right;
+    	padding-top: 0;
+    	margin-bottom: 5px;
+   	}
 	.contact-list li{
-		font-size: 12px;
+		display: block;
+		font-size: 13px;
 	}
 	.contact-list li:not(:last-child){
-		margin-right: 25px;
+		margin-right: 0;
 	}
 	.header-nav {
 		display: none;
@@ -928,6 +943,13 @@ footer .container{
 	.price-block{
 		width: 80%;
 	}
+	.start-time, .end-time {
+    	top: 34px;
+   	}
+   	.advantage .col {
+    	width: 32%;
+    	padding: 100px 10px 10px;
+	}
 	.advantage .col span{
 		font-size: 11px;
 	}
@@ -948,26 +970,23 @@ footer .container{
 	}
 	footer {
 		height: auto;
-		padding-top: 20px;
+		padding-top:20px;
 	}
 	.developer {
-		font: 9px/13px 'robotoregular';
+		font: 11px/13px 'robotoregular';
 	}
-	.contact-list li{
-		font-size: 10px;
-	}
-	.contact-list li:not(:last-child){
-		margin-right: 8px;
-	}
+	
 	.footer-contact{
-		margin: 25px 200px 0 0;
+		margin-right:200px;
+		padding-bottom: 10px;
 	}
 	.footer-contact .contact-list{
 		bottom: -23px;
 		left: 130px;
+		padding-right: 45px;
 	}
 	.footer-contact .address span{
-		font-size: 9px;
+		font-size: 10px;
 	}
 	.social{
 		top: -2px;
@@ -1019,6 +1038,10 @@ footer .container{
 	.price, .price .title {
    		margin-left: 0;
 	}
+	.total-price span.old-price {
+    	font-size: 17px;
+   		margin-left: -67px;
+   	}
 	.price {
     	padding: 15px 0 0px 0;
 	}
@@ -1052,22 +1075,25 @@ footer .container{
 		display: inline;
 	}
 	.footer-contact .contact-list{
-		padding-right: 0;
-		left: 50px;
+		padding-right: 75px;
+	}
+	.footer-contact .address{
+		padding-left: 30px;
 	}
 	.developer{
 		float: none;
 		position: absolute;
 		top: 60px;
-		left: 200px;
+		left: 175px;
 		text-align: center;
 	}
 	.footer-contact {
-    	margin: 38px 114px 0 0;
+    	margin: 0;
 	}
 	.social {
     	top: 100px;
-    	right: 150px;
+    	right: 168px;
+    	padding-bottom: 10px;
 	}
 }
 @media (max-width: 479px){
@@ -1083,13 +1109,13 @@ footer .container{
   		height: 60px;
   	}
 	.logo img {
-    	width: 55%;
+    	width: 75%;
     }
     .logo {
-   		width: 200px;
+   		width: 155px;
    	}
    	.slicknav_nav a{
-   		font-size: 10px;
+   		font: normal 12px 'robotolight';
    	}
    	.slide{
    		top: 15px;
@@ -1102,6 +1128,12 @@ footer .container{
 	}
 	.timer-wrap .title{
 		text-align: center;
+	}
+	.price-block {
+    	width: 73%;
+    }
+    .price .title {
+    	margin-bottom: 15px;
 	}
 	.tab-val{
 		font-size: 45px;
@@ -1117,42 +1149,55 @@ footer .container{
     	padding: 10px;
 	}
 	.total-price {
-    	width: 90px;
+    	width: 60px;
     }
     .total-price span.old-price {
     	font-size: 12px;
     	margin-left: 7px;
 	}
     .total-price span.new-price {
-   		font-size: 17px;
-    	margin-left: 12px;
+   		font-size: 16px;
+    	margin-left: 10px;
 	}
 	.total-price span.new-price span {
     	font-size: 12px;
     }
+    .price-desq {
+    	padding: 40px 0 0;
+	}
+	.total-distance, .total-time {
+    	font-size: 12px;
+	}
     .information .btn {
     	font-size: 14px;
     	padding: 10px;
 	}
 	.start-time, .end-time {
         font-size: 14px;
+        top:19px;
 	}
 	.advantage .col {
     	width: 35%;
 	}
 	.reviews .col {
-    	width: 76%;
+    	width: 73%;
+    	padding: 0px 10px;
     }
     .footer-contact .contact-list{
 		left: 0;
 		right: 0;
 		text-align: center;
+		padding-right: 0;
+	}
+	.contact-list li:before {
+    	margin-right: 5px;
 	}
 	.footer-contact{
-		margin-right: 35px;
+		margin-right:0;
 	}
 	.developer{
-		left: 108px;
+		left: 90px;
+		top: 25px;
 	}
 	.social{
 		right: 90px;
